@@ -8,16 +8,16 @@ This project consists of 3 separate parts:
 
 ## Directory Structure
 
-### Documentation		[`./docs`]
+### Documentation		[/docs](docs)
 
 The project spec, as well as informational resources on the topics covered
 by this project. 
 
-[testLink](docs/assignment-git.md)
-
-
 Contains: 
 * The assignments, in detail
-	* (`./docs/assignment-git.md`)
-	* (`./docs/assignment-header.md`)
-	* (`./docs/assignment-zcm.md`)
+	* [/docs/assignment-git.md](docs/assignment-git.md)
+	* [/docs/assignment-header.md](docs/assignment-header.md)
+	* [/docs/assignment-zcm.md](docs/assignment-zcm.md)
+* Links to other helpful resources [/docs/notes.md](docs/notes.md)
+
+### Git 			[
