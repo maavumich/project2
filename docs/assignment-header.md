@@ -63,6 +63,7 @@ When the compiler reads the `bar();` call, it has not yet encountered a definiti
 ### Task
 
 Navigate to `/headers/ex3/` from the root folder of this project. `maths.h` contains a declaration for a function used in the `main` function in `main.cpp`. Something is again missing here, but it's not the `#include` statement - fix it, then compile and run `main.cpp`. Don't modify the `main` function or the function declaration in `maths.h`. When you're done, move on to exercise 4.
+<<<<<<< HEAD
 
 ## Exercise 4
 
