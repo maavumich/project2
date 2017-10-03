@@ -16,15 +16,27 @@ char number_to_alphabet(int number)
 } 
 
 ```
-The interface defines how we should expect to use this function. If we pass in a number as an integer, we'll get that number letter from the alphabet, returned from the function as a character. The interface does *not* explain how the function does that. 
+The interface defines how we should expect to use this function. If we pass in a number as an integer, we'll get that number letter from the alphabet, returned from the function as a character. The interface does not explain *how* the function does that. 
 
 The implementation, as you may have guessed, is the actual definition of how the interface will do what we expect it to do. The `//CODE GOES HERE` part of the snippet above is where the implementation of that function would go. 
 
 It's worth noting that even if you're writing code that no one else will see, separating interface and implementation still helps to make your code easier to understand and debug.
 
-In C++, interface and implementation are often separated into **header files** (typically .h or .hpp files) and **implementation files** (typically .cpp files) respectively. In header files, we outline the interface of the functions, classes, and other structures we're creating. In implementation files, we write our solution, respecting the interfaces as we do. 
+In C++, interface and implementation are often separated into **header files** (typically .h or .hpp files) and **implementation files** (typically .cpp files) respectively. In header files, we outline the interface of the functions, classes, and other structures we're creating. In implementation files, we write our solution, respecting the interfaces as we do. In our implementation files, we write `#include 'header_file_name.h'` to signal to the compiler that the implementation file defines or makes use of something in the header file.
 
 ## Exercise 1
+
+### Task
+
+Navigate to `/headers/ex1/` from the root folder of this project. You should see `main.cpp` and `maths.h`. Something is missing that prevents `main.cpp` from properly compiling and running. Identify and fix this issue, then compile and run `main.cpp`. To pass this exercise, you must get `"Good job! Move onto the next exercise."` to print when you run the compiled binary. When you're done, move on to exercise 2.
+
+## Exercise 2
+
+### Task
+
+Navigate to `/headers/ex2/` from the root folder of this project. Again we have a `main.cpp` and a `maths.h`. Something else is wrong that prevents `main.cpp` from properly compiling and running. Identify and fix this issue, then compile and run `main.cpp`. 
+
+## Exercise 3
 
 ### Preface
 
@@ -32,6 +44,7 @@ The compiler reads files sequentially, a line at a time. An interesting side eff
 
 ```
 #include <iostream>
+using std::cout;
 
 void foo()
 {
@@ -49,11 +62,12 @@ When the compiler reads the `bar();` call, it has not yet encountered a definiti
 
 ### Task
 
-Navigate to `/headers/ex1/` from the root folder of this project. You should see `main.cpp` and `maths.h`. `maths.h` contains a declaration for a function used in the `main` function in `main.cpp`. Something is missing here - fix it, then compile and run `main.cpp`. To pass this exercise, you must get `"Good job! Move onto the next exercise."` to print when you run the compiled binary. Don't modify the `main` function or the function declaration in `maths.h`. When you're done, move on to exercise 2.
+Navigate to `/headers/ex3/` from the root folder of this project. `maths.h` contains a declaration for a function used in the `main` function in `main.cpp`. Something is again missing here, but it's not the `#include` statement - fix it, then compile and run `main.cpp`. Don't modify the `main` function or the function declaration in `maths.h`. When you're done, move on to exercise 4.
 
-## Exercise 2
+## Exercise 4
+
+### Preface
 
 ### Task
 
-Navigate to `/headers/ex2/` from the root folder of this project. Again we have `main.cpp` and `maths.h`, and again something is missing that prevents `main.cpp` from properly compiling and running. Identify and fix this issue, then compile and run `main.cpp` and you should get the same confirmation if your solution was correct. 
-
+Navigate to `/headers/ex4/` from the root folder of this project. `main.cpp` is dependant on `A.h` and `B.h`, which are both dependant on `X.h`. Build `main.cpp` without modifying any of the files. 
