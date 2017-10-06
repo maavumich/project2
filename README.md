@@ -1,6 +1,6 @@
 # Training Project 2
 
-This project consists of 3 separate parts: 
+This project consists of 3 separate parts:
 
 * An introduction to git techniques you will need to contribute to maav
 * An introduction to header files in C++ and various practice excersizes
@@ -11,9 +11,9 @@ This project consists of 3 separate parts:
 ### Documentation		[/docs](docs)
 
 The project spec, as well as informational resources on the topics covered
-by this project. 
+by this project.
 
-Contains: 
+Contains:
 * The assignments, in detail
 	* [/docs/assignment-git.md](docs/assignment-git.md)
 	* [/docs/assignment-header.md](docs/assignment-header.md)
@@ -27,9 +27,9 @@ The git project
 
 ### Header 			[/header](header)
 
-The git project
+The Headers project
 
-### ZCM 			[/zcm](zcm)
+### ZCM 			[/zcm-exercise](zcm)
 
-The git project
+The zcm project
 
