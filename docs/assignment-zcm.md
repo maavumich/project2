@@ -7,7 +7,6 @@ communicate with each other effectively. The reason for this design is that it e
 and testing, and makes it more modular. In order for these pieces to communicate effectively, we use
 a library called zero communications and marshalling or ZCM.
 
----
 ## How it works
 
 ZCM has many transports that you can use it with, "ipc" or interprocess, UDP Multicast, and "inproc"
@@ -22,7 +21,6 @@ and can use them as a reference for the exercise.
 [Pub.cpp](https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Pub.cpp) and
 [Sub.cpp](https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Sub.cpp).
 
----
 ## The Exercise
 
 We will implement something similar to the tutorial you just read, however, with a few differences
@@ -58,7 +56,6 @@ The CMake is already done for you.
 ** MAKE SURE THAT YOU KEEP ALL OF YOUR COMPILED BINARIES IN A BUILD DIRECTORY **
 ** THIS KEEPS YOUR DIRECTORIES CLEAN AND PREVENTS YOU FROM COMMITTING BINARIES **
 
----
 ## The Exercise Part II
 
 After testing your sender and receiver combo, you likely have noticed that no matter what you do,
@@ -70,7 +67,6 @@ What you need to do is go into your sender and edit it to include the "priming".
 delay between the priming and the sending of the messages intended to reach the receiver to be large
 enough. Once you have this working, you have a working basic knowledge of zcm.
 
----
 ## Closing Notes
 
 This has covered the most important parts of using zcm in your work for MAAV. However, it did not
