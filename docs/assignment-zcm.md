@@ -15,12 +15,12 @@ or inter thread but within the same process. We're going to be using "ipc" for t
 that is what we'll be working with here.
 
 Before you do continue and begin the actual exercise, please read through but don't do this tutorial
-on ZCM's github, [https://github.com/ZeroCM/zcm/blob/master/docs/tutorial.md](zcm tutorial). Even
+on ZCM's github, [zcm tutorial](https://github.com/ZeroCM/zcm/blob/master/docs/tutorial.md). Even
 though that tutorial is in C and not C++, you should have at least an idea of what you need to do
 to have two processes communicate over ipc. You should also look over the two following C++ examples
 and can use them as a reference for the exercise.
-[https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Pub.cpp](Pub.cpp) and
-[https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Sub.cpp](Sub.cpp).
+[Pub.cpp](https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Pub.cpp) and
+[Sub.cpp](https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Sub.cpp).
 
 ---
 ## The Exercise
@@ -47,7 +47,7 @@ specific number of messages that you can chose.
 
 Once the sender is implemented, you need to implement the receiver in receiver.cpp. This part is
 much more complicated than the sender, as you will need to implement a handler class that will keep
-track of the number of messages received. You should reference [https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Sub.cpp](Sub.cpp)
+track of the number of messages received. You should reference [Sub.cpp](https://github.com/ZeroCM/zcm/blob/master/examples/cpp/Sub.cpp)
 to expedite this process and to help with debugging later on. Your main.cpp should instead of using
 zcm.run() instead use zcm.handle() inside of a loop. It should print the number inside of
 every received message upon receiving it, as well as the total number of messages received at the
