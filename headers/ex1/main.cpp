@@ -1,8 +1,5 @@
 #include <iostream>
-
 using std::cout;
-
-
 
 //DON'T EDIT THIS FUNCTION
 int main(int argc, char* argv[])

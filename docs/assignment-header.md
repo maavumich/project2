@@ -28,19 +28,13 @@ In C++, interface and implementation are often separated into **header files** (
 
 ### Task
 
-Navigate to `/headers/ex1/` from the root folder of this project. You should see `main.cpp` and `maths.h`. Something is missing that prevents `main.cpp` from properly compiling and running. Identify and fix this issue, then compile and run `main.cpp`. To pass this exercise, you must get `"Good job! Move onto the next exercise."` to print when you run the compiled binary. When you're done, move on to exercise 2.
+Navigate to `/headers/ex1/` from the root folder of this project. You should see `main.cpp` and `maths.h`. Something is missing that prevents `main.cpp` from properly compiling and running. Identify and fix this issue, then compile and run `main.cpp`. To pass this exercise, you must get `"Good job! Move onto the next exercise."` to print when you run the compiled binary. You are not allowed to modify the `main` function or define new functions within `main.cpp`. When you're done, move on to exercise 2.
 
 ## Exercise 2
 
-### Task
-
-Navigate to `/headers/ex2/` from the root folder of this project. Again we have a `main.cpp` and a `maths.h`. Something else is wrong that prevents `main.cpp` from properly compiling and running. Identify and fix this issue, then compile and run `main.cpp`. 
-
-## Exercise 3
-
 ### Preface
 
-The compiler reads files sequentially, a line at a time. An interesting side effect of that is that the following code produces a compiler error:
+The compiler reads files sequentially, literally a line at a time. An interesting side effect of that is that the following code produces a compiler error:
 
 ```
 #include <iostream>
@@ -62,10 +56,9 @@ When the compiler reads the `bar();` call, it has not yet encountered a definiti
 
 ### Task
 
-Navigate to `/headers/ex3/` from the root folder of this project. `maths.h` contains a declaration for a function used in the `main` function in `main.cpp`. Something is again missing here, but it's not the `#include` statement - fix it, then compile and run `main.cpp`. Don't modify the `main` function or the function declaration in `maths.h`. When you're done, move on to exercise 4.
-<<<<<<< HEAD
+Navigate to `/headers/ex2/` from the root folder of this project. `maths.h` contains a declaration for a function used in the `main` function in `main.cpp`. Something is again missing here, but it's not the `#include` statement - fix it, then compile and run `main.cpp`. Don't modify the `main` function or the function declaration in `maths.h`. When you're done, move on to exercise 3.
 
-## Exercise 4
+## Exercise 3
 
 ### Preface
 
@@ -73,4 +66,4 @@ If you get confused about this problem, you should research the concept of "incl
 
 ### Task
 
-Navigate to `/headers/ex4/` from the root folder of this project. `main.cpp` is dependant on `A.h` and `B.h`, which are both dependant on `X.h`. Build `main.cpp` without modifying any of the files. You should get a redefinition error. The problem with this code is similar to the one from exercise 2, but it's spread out between files this time. You need to figure out how to fix this problem without modifying `main.cpp`, `A.h` or `B.h`. Try compiling this using `g++ -E main.cpp` - it'll produce a 
+Navigate to `/headers/ex3/` from the root folder of this project. `main.cpp` is dependant on `A.h` and `B.h`, which are both dependant on `X.h`. Build `main.cpp` without modifying any of the files. You will likely get a redefinition error. You need to figure out how to fix this compiler error without modifying `main.cpp`, `A.h` or `B.h`. Pay close attention to what `#include`s what.

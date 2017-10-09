@@ -1,25 +1,18 @@
-#include <iostream>
-#include "maths.h"
-using std::cout;
+#include "A.h"
+#include "B.h"
+#include <string>
 
-
-/*
- * DO NOT EDIT THIS MAIN FUNCTION
- */
+//DO NOT MODIFY THIS FILE!
 
 int main(int argc, char* argv[])
 {
-	int res = add(10, 7);
-	int res2 = add(-5, 15);
-	int res3 = add(0, 0);
-	if (res == 17 && res2 == 10 && res3 == 0)
+	if(argc > 1 && argv[1] == "beta")
 	{
-		cout << "Good job! Move onto the next exercise.\n";
+		beta();
+		alpha();
 	}
-	else
+	else //defaults to alpha
 	{
-		cout << "add() is not working as expected.\n";
+		alpha();
 	}
-	
-	return 0;
 }
