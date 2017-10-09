@@ -76,8 +76,84 @@ Refresh your browser in the maav-p2-1 project on gitlab. If the push worked,
 you should now see a file README.md in the project. Cool, now we know Gitlab
 works. 
 
+Part 2 - Branches
+--------------------------------------------------------------------------------
+Read 
+[This Document](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+for an overview about what branches are in git, and how to use them. This will
+be useful for completing the exercise. 
 
-Part 2 - Working with Remotes
+Branches in git are primarily used to work on a feature without disturbing
+or being disturbed by other people's work. Say for example you are working
+on some code, and end up breaking something. You decide to push to master, 
+and someone else pulls that broken code. Now they can't do work because you
+broke something, which sucks. With branches, you can work on your own thing, 
+and push somewhere else without disturbing anyone else. Additionally, if 
+someone makes changes to `master`, you won't be affected by these changes
+until you merge. Branches make it easier to stay in the development mindset
+before you actually have to merge in with the other code. 
+
+On MAAV, you should always be working on a branch which is not `master`. 
+`master` is the branch where we keep all of our flight-ready code. In order
+to merge your features, we need your changes to be on a different branch so
+we can properly merge your features into master. 
+
+### Exercise
+
+In this exercise we will do some exercises involving branches. The instructions
+here will be vague, so you will have to go back to the documentation we linked, 
+or do some googling on your own. 
+
+1. Create a new project using Gitlab named `maav-p2-2`, and clone the repo. 
+
+2. Create a file README.txt, and write something in it. Push it to gitlab. 
+You should see what you wrote on the gitlab page for your `maav-p2-2`. 
+
+3. Create a new branch off of `master`
+named `otherbranch`. Switch to that branch and add
+a line at the end of `README.txt`. Push to that branch. 
+
+4. Switch back to `master`, then create another branch off of `master` called
+`morebranch`. Add a line to the beginning to `README.txt`. Push to that branch. 
+
+5. Switch back to `master`, and merge `otherbranch` into `master`. This should
+work without problem. This is because `otherbranch` is exactly one commit ahead
+of master, so git can directly apply the commit to master. 
+
+6. Now merge `morebranch` into `master`. This will open a text editor called
+GNU nano, and show a message "Merge branch 'morebranch'". This is git telling
+you that it has to perform a merge to combine the branches. Git has to move the
+commit from `morebranch` and apply it after the commit created with `otherbranch`.
+Accept the mere. 
+
+7. At this point, check `README.txt`. The edits made on both branches should
+appear in the file. Now we just need to clean up our branches. Delete the 
+two branches we created. Running the command 
+`git log --oneline --decorate --graph --all` shows us where we branched off, 
+and where we merged. Note that `otherbranch` does not show up, because it 
+was merged completely cleanly, while `morebranch` required an actual merge
+to combine it. 
+
+This concludes this exercise. Here you learned the basics about how branches
+work. If you have any further questions, feel free to ask us. 
+
+Part 3 - Merge Conflicts
+--------------------------------------------------------------------------------
+
+Merge conflicts are what happens when git dosen't know how to merge your changes
+with the changes made on the branch you are trying to merge into. This mainly
+occurs when the same line on each file was changed. 
+
+Read [This Document](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+
+For information about how to resolve merge conflicts, it will be useful in the
+exercise. 
+
+### Exercise
+
+1. 
+
+Part 4 - Working with Remotes
 --------------------------------------------------------------------------------
 
 Read 
@@ -88,3 +164,8 @@ MAAV uses remotes to manage access. Our `origin` remote is where our global
 `master` branch lives, where we put the latest version of our flight ready 
 code. In order to develop for maav, each member develops on their own 
 remote named after their uniqname. 
+
+In short, a remote is another instance of a repository that is somewhere else, 
+aka not the current repository. A remote can be somewhere else on your computer, 
+or somewhere else on the cloud. When you pushed to gitlab in the previous 
+
