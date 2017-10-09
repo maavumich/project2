@@ -69,6 +69,8 @@ Navigate to `/headers/ex3/` from the root folder of this project. `maths.h` cont
 
 ### Preface
 
+If you get confused about this problem, you should research the concept of "include guards". [Here's a good resource.](https://en.wikipedia.org/wiki/Include_guard)
+
 ### Task
 
-Navigate to `/headers/ex4/` from the root folder of this project. `main.cpp` is dependant on `A.h` and `B.h`, which are both dependant on `X.h`. Build `main.cpp` without modifying any of the files. 
+Navigate to `/headers/ex4/` from the root folder of this project. `main.cpp` is dependant on `A.h` and `B.h`, which are both dependant on `X.h`. Build `main.cpp` without modifying any of the files. You should get a redefinition error. The problem with this code is similar to the one from exercise 2, but it's spread out between files this time. You need to figure out how to fix this problem without modifying `main.cpp`, `A.h` or `B.h`. Try compiling this using `g++ -E main.cpp` - it'll produce a 
