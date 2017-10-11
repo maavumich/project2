@@ -1,19 +1,24 @@
 #include <iostream>
-
+#include "maths.h"
 using std::cout;
 
+/*
+ * DO NOT EDIT THIS MAIN FUNCTION
+ */
 
-
-//DON'T EDIT THIS FUNCTION
 int main(int argc, char* argv[])
 {
-	if(add(1000, 2000) == 3000 && add(-1050, 50) == -1000)
+	int res = add(10, 7);
+	int res2 = add(-5, 15);
+	int res3 = add(0, 0);
+	if (res == 17 && res2 == 10 && res3 == 0)
 	{
-		cout << "Good job! Move on to the next exercise.\n";
+		cout << "Good job! Move onto the next exercise.\n";
 	}
 	else
 	{
 		cout << "add() is not working as expected.\n";
 	}
+	
 	return 0;
 }
