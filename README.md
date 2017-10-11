@@ -20,11 +20,11 @@ Contains:
 	* [/docs/assignment-zcm.md](docs/assignment-zcm.md)
 * Links to other helpful resources [/docs/notes.md](docs/notes.md)
 
-### Header 			[/header](header)
+### Header 			[/headers](headers)
 
 The Headers project
 
-### ZCM 			[/zcm-exercise](zcm)
+### ZCM 			[/zcm-exercise](zcm-exercise)
 
 The zcm project
 
