@@ -225,7 +225,7 @@ push something to their remote. Fetch their branch, and make sure you can
 see what they pushed. Now, add your own change to what they pushed, and push
 to your own remote. Have them ensure that they can see what you pushed. 
 
-#Done
+# Done
 
 Thats it for this introductory git tutorial. At this point, git probably seems
 quite complicated. However, it is one of the most useful tools a programmer can
