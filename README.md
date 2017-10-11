@@ -20,11 +20,6 @@ Contains:
 	* [/docs/assignment-zcm.md](docs/assignment-zcm.md)
 * Links to other helpful resources [/docs/notes.md](docs/notes.md)
 
-### Git 			[/git](git)
-
-The git project
-
-
 ### Header 			[/header](header)
 
 The git project
