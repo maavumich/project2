@@ -18,7 +18,6 @@ Contains:
 	* [/docs/assignment-git.md](docs/assignment-git.md)
 	* [/docs/assignment-header.md](docs/assignment-header.md)
 	* [/docs/assignment-zcm.md](docs/assignment-zcm.md)
-* Links to other helpful resources [/docs/notes.md](docs/notes.md)
 
 ### Header 			[/headers](headers)
 
